@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User View</title>
+</head>
+<body>
+    <h1>Produtos com valor acima</h1>
+    <table>
+        <tr th:each="produto: ${products}">
+        <td th:text="${produto}" />
+    </tr>
+    </table>
+</body>
+</html>

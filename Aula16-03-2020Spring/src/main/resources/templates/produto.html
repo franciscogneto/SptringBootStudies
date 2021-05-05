@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View</title>
+</head>
+<body>
+    <h1>Produto</h1>
+    <p th:if="${product == null}">ERRO!! nenhum produto encontrado</p>
+    <p th:unless="${product == null}"  th:text="${product}"></p>
+    </body>
+</html>

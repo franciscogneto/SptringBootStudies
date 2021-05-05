@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro</title>
+</head>
+<body>
+    <h1>carro</h1>
+    <p th:if="${car == null}">ERRO!! nenhum carro encontrado</p>
+    <p th:unless="${car == null}"  th:text="${car}"></p>
+    </body>
+</html>
